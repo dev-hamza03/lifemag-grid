@@ -195,7 +195,7 @@ nav .part-3 i {
 }
 
 .box-6 {
-    background-image: url('/assets/images/card-6-building-img.webp');
+    background-image: url('assets/images/card-6-building-img.webp');
     background-position: center;
     background-size: cover;
     grid-area: box6;
