@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+    /* for headings */
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 0 80px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+    padding-bottom: 13px;
+}
+
+nav .part-1 {
+    width: 30px;
+    height: 40px;
+}
+
+nav .part-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav .part-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+nav .part-2 h4 {
+    font-size: 15px;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+nav .part-3 i {
+    font-size: 25px;
+}
+
+.top {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.top h1 {
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+.top p {
+    font-size: 19px;
+    font-weight: 500;
+    opacity: .5;
+}
+
+
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 70px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "box1 box1 box2 box3"
+        "box4 box5 box2 box3"
+        "box4 box5 box6 box6";
+    grid-gap: 20px;
+    padding-bottom: 50px;
+}
+
+.box {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px 40px;
+    position: relative;
+}
+
+.box .upper h6 {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.box .upper h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.box .bottom button {
+    padding: 8px 16px;
+    border: none;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 5px;
+    /* optional for rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* subtle shadow */
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.box .bottom button:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+
+.box-1 {
+    background-image: url('assets/images/card-1-coffe-img.jpeg');
+    background-position: center;
+    background-size: cover;
+    grid-area: box1;
+}
+
+
+.box-1 .bottom button {
+    color: #4d9692;
+}
+
+.box-2 {
+    background-image: url('assets/images/card-2-bulding-img-2.jpeg');
+    background-position: center;
+    background-size: cover;
+    grid-area: box2;
+}
+
+
+.box-2 .bottom button {
+    color: #162331;
+}
+
+
+
+.box-3 {
+    background-image: url('assets/images/card-3-hand-img.jpeg');
+    background-position: center;
+    background-size: cover;
+    grid-area: box3;
+}
+
+
+.box-3 .bottom button {
+    color: #B88F71;
+}
+
+.box-4 {
+    background-image: url(assets/images/card-4-plant.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: box4;
+}
+
+.box-4 .bottom button {
+    color: #6dacbf;
+}
+
+.box-5 {
+    background-image: url('assets/images/card-5-hand2-img.webp');
+    background-position: center;
+    background-size: cover;
+    grid-area: box5;
+}
+
+.box-5 .bottom button {
+    color: #FCA4AC;
+}
+
+.box-6 {
+    background-image: url('/assets/images/card-6-building-img.webp');
+    background-position: center;
+    background-size: cover;
+    grid-area: box6;
+}
+
+.box-6 .upper h2{
+    color: rgba(0, 0, 0, 0.72);
+}
+
+.box-6 .upper h6{
+    color: rgba(0, 0, 0, 0.875);
+}
+
+.box-6 .bottom button {
+    color: #66BFF9;
+}
