@@ -1,5 +1,4 @@
-cat << 'EOF' > README.md
-# 🎨 LifeMag Grid Layout
+## 🎨 LifeMag Grid Layout
 
 A modern lifestyle grid layout built with **HTML** and **CSS**. This project showcases a clean magazine-style homepage using CSS Grid for layout and card designs. ⚡
 
